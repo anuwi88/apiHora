@@ -1,0 +1,22 @@
+{
+  "name": "hora-atual",
+  "version": "0.0.1",
+  "description": "api para horário atual",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --timeout 2000 --exit",
+    "start": "nodemon",
+    "dev": "set NODE_ENV=development && nodemon server.js",
+    "build": "set NODE_ENV=production && pm2 start server.js --name=\"horaAtual-api\""
+  },
+  "author": "Guilherme de Sousa Mendes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "moment": "^2.23.0",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1",
+    "nodemon": "^2.0.4",
+    "request": "^2.88.0"
+  }
+}
